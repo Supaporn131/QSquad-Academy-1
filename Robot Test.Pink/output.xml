@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-04-28T20:53:09.112711" rpa="false" schemaversion="5">
+<suite id="s1" name="AS3 Pink" source="/Users/user/Desktop/Robot/AS3_Pink.robot">
+<test id="s1-t1" name="Scenario: Register Successfully" line="33">
+<kw name="Open Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:09.626251" level="INFO">Opening browser 'chrome' to base url 'https://vivan4962.softr.app/'.</msg>
+<arg>https://vivan4962.softr.app/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-28T20:53:09.625993" elapsed="7.298631"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-28T20:53:16.931323" elapsed="0.358475"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>class=css-pohhr0</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T20:53:17.290069" elapsed="0.042203"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:09.624994" elapsed="7.707514"/>
+</kw>
+<kw name="Click Register button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>class=css-pohhr0</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T20:53:17.333717" elapsed="0.021903"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:17.356290" level="INFO">Clicking element 'class=css-pohhr0'.</msg>
+<arg>class=css-pohhr0</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:17.355929" elapsed="1.125950"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-28T20:53:18.482459" elapsed="0.647864"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=terms_and_privacy</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T20:53:19.130678" elapsed="0.058220"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:17.333210" elapsed="1.855894"/>
+</kw>
+<kw name="Fill Fullname field">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=user-accounts1-Name-1059950703</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-28T20:53:19.189952" elapsed="0.024216"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:19.214725" level="INFO">Typing text 'Pinkpitchayaaa' into text field 'id=user-accounts1-Name-1059950703'.</msg>
+<arg>id=user-accounts1-Name-1059950703</arg>
+<arg>Pinkpitchayaaa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:19.214435" elapsed="0.438844"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:19.189432" elapsed="0.464032"/>
+</kw>
+<kw name="Fill Email field">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:19.654855" level="INFO">Typing text 'pin.kfortest1@gmail.com' into text field 'id=user-accounts1-Email--1509232072'.</msg>
+<arg>id=user-accounts1-Email--1509232072</arg>
+<arg>pin.kfortest1@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:19.654193" elapsed="0.451203"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:19.653808" elapsed="0.451750"/>
+</kw>
+<kw name="Fill Password field">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:20.106659" level="INFO">Typing text 'Pink2024' into text field 'id=user-accounts1-password--1423713697'.</msg>
+<arg>id=user-accounts1-password--1423713697</arg>
+<arg>Pink2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:20.106387" elapsed="0.307257"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:20.105882" elapsed="0.308011"/>
+</kw>
+<kw name="Select checkbox">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:20.418129" level="INFO">Clicking element 'id=terms_and_privacy'.</msg>
+<arg>id=terms_and_privacy</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:20.417848" elapsed="0.127846"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:20.415069" elapsed="0.130899"/>
+</kw>
+<kw name="Click Register Button Below">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T20:53:20.547287" level="INFO">Clicking element 'class=css-1nddppv'.</msg>
+<arg>class=css-1nddppv</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T20:53:20.546983" elapsed="0.131747"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:20.546479" elapsed="0.132843"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T20:53:25.693997" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T20:53:20.680116" elapsed="5.015319"/>
+</kw>
+<status status="PASS" start="2024-04-28T20:53:09.624240" elapsed="16.075773"/>
+</test>
+<status status="PASS" start="2024-04-28T20:53:09.115512" elapsed="16.587114"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AS3 Pink">AS3 Pink</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
