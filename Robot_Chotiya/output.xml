@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-04-28T16:58:49.077535" rpa="false" schemaversion="5">
+<suite id="s1" name="Prem AS2" source="/Users/chotikasathean/Desktop/Robot/Prem_AS2.robot">
+<test id="s1-t1" name="check register fail" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:49.377270" level="INFO">Opening browser 'chrome' to base url 'https://vivan4962.softr.app/register'.</msg>
+<arg>https://vivan4962.softr.app/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-28T16:58:49.376958" elapsed="5.917685"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:55.297205" level="INFO">Typing text 'Chotiya' into text field 'id=user-accounts1-Name-1059950703'.</msg>
+<arg>${fill_name}</arg>
+<arg>Chotiya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:58:55.296389" elapsed="0.365847"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:55.662874" level="INFO">Typing text 'chotiya97@gmail.com' into text field 'id=user-accounts1-Email--1509232072'.</msg>
+<arg>id=user-accounts1-Email--1509232072</arg>
+<arg>chotiya97@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:58:55.662572" elapsed="0.367092"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:56.030495" level="INFO">Typing text '999' into text field 'id=user-accounts1-password--1423713697'.</msg>
+<arg>id=user-accounts1-password--1423713697</arg>
+<arg>999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:58:56.030101" elapsed="0.142581"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:56.173762" level="INFO">Clicking element 'id=terms_and_privacy'.</msg>
+<arg>id=terms_and_privacy</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:58:56.173471" elapsed="0.086917"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:56.262471" level="INFO">Clicking button 'class=css-1nddppv'.</msg>
+<arg>class=css-1nddppv</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-28T16:58:56.261901" elapsed="0.136521"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-28T16:58:56.440957" level="INFO">Element 'class=form-error-text' contains text 'Your password must contain at least 6 characters'.</msg>
+<arg>class=form-error-text</arg>
+<arg>Your password must contain at least 6 characters</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-04-28T16:58:56.398923" elapsed="0.042226"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-28T16:58:58.442630" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-28T16:58:56.441655" elapsed="2.001201"/>
+</kw>
+<status status="PASS" start="2024-04-28T16:58:49.375700" elapsed="9.067755"/>
+</test>
+<status status="PASS" start="2024-04-28T16:58:49.081232" elapsed="9.363582"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Prem AS2">Prem AS2</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-28T16:58:49.070439" level="WARN">Error in file '/Users/chotikasathean/Desktop/Robot/Prem_AS2.robot' on line 1: Singular section headers like '***Setting***' are deprecated. Use plural format like '*** Settings ***' instead.</msg>
+<msg time="2024-04-28T16:58:49.070622" level="WARN">Error in file '/Users/chotikasathean/Desktop/Robot/Prem_AS2.robot' on line 4: Singular section headers like '***Variable***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2024-04-28T16:58:49.070784" level="WARN">Error in file '/Users/chotikasathean/Desktop/Robot/Prem_AS2.robot' on line 7: Singular section headers like '***Test case ***' are deprecated. Use plural format like '*** Test Cases ***' instead.</msg>
+</errors>
+</robot>
